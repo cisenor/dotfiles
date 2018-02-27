@@ -104,8 +104,7 @@ then
 	git clone https://github.com/jldeen/dotfiles.git ~/.dotfiles
 	echo ''
 	cd $HOME/.dotfiles && echo "switched to .dotfiles dir..."
-	echo ''
-	echo "Checking out macOS branch..." && git checkout mac
+
 	echo ''
 	echo "Now configuring symlinks..." && $HOME/.dotfiles/script/bootstrap
     if [[ $? -eq 0 ]]
