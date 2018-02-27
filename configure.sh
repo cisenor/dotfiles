@@ -128,24 +128,6 @@ else
 	
 fi
 
-# Setup and configure az cli
-echo ''
-read -p "Do you want to install Azure CLI? y/n (This will take some time...)" -n 1 -r
-echo ''
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-	echo "Now installing az cli..."
-    brew install azure-cli
-    if [[ $? -eq 0 ]]
-    then
-        echo "Successfully installed Azure CLI 2.0."
-    else
-        echo "Azure CLI not installed successfully." >&2
-fi
-else 
-    echo "You chose not to install Azure CLI. Exiting now."
-fi
-
 # Set default shell to zsh
 echo ''
 read -p "Do you want to change your default shell? y/n" -n 1 -r
@@ -163,5 +145,26 @@ fi
 else 
     echo "You chose not to set your default shell to zsh. Exiting now..."
 fi
+
+# Setup and configure az cli
+echo ''
+read -p "Do you want to install Azure CLI? y/n (This will take some time...)" -n 1 -r
+echo ''
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	echo "Now installing az cli..."
+    sudo apt-get install python libssl-dev libffi-dev python-dev build-essential -y
+	curl -L https://aka.ms/InstallAzureCli | bash
+	exec -l $SHELL
+    if [[ $? -eq 0 ]]
+    then
+        echo "Successfully installed Azure CLI 2.0."
+    else
+        echo "Azure CLI not installed successfully." >&2
+fi
+else 
+    echo "You chose not to install Azure CLI. Exiting now."
+fi
+
 echo ''
 echo '	Badass macOS terminal installed!'
