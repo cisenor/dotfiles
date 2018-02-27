@@ -80,6 +80,18 @@ brew install mc
 
 # Speedtest-cli and jq install
 brew install jq speedtest-cli
+# Tmux Plugin Manager
+echo ''
+echo "Now installing tmux plugin manager..."
+echo ''
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Bash color scheme
+echo ''
+echo "Now installing solarized dark WSL color scheme..."
+echo ''
+wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
+mv dircolors.256dark .dircolors
 
 # Pull down personal dotfiles
 echo ''
