@@ -28,7 +28,11 @@ else
     PUB_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 fi
 
+<<<<<<< HEAD
 INTERNET=''
+=======
+#internet_info=`iwconfig eth0 | grep "Signal level" | awk '{print $2}' | sed 's/-//g'`
+>>>>>>> db level check test
 
 if [[ $internet_info -lt 20 ]]; then
     echo -n '#[fg=colour150]'
