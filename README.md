@@ -9,7 +9,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/mac/conf
 ### WSL Configuration
 Run the following to configure WSL from scratch...
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/wsl/configure.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/wsl-dev/configure.sh)"
 ```
 
 ## install
