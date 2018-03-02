@@ -178,4 +178,4 @@ else
 fi
 
 echo ''
-echo '	Badass macOS terminal installed!'
+echo '	Badass WSL terminal installed! Please reboot your computer for changes to be made.'
