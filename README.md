@@ -1,4 +1,12 @@
-# jldeen does dotfiles - forked from holman's repo
+## More Dots Now
+
+## Git
+Add the following to your ~/.gitconfig file. 
+```
+[include]
+  path = ~/.dotfiles/git/aliases.gitconfig
+```
+
 
 ### macOS Configuration
 Run the following to configure macOS from scratch...

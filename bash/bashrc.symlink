@@ -91,6 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias be='bundle exec'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -128,3 +129,5 @@ export PATH=$PATH:/home/jldeen/bin
 
 # az cli
 # source /usr/bin/az
+
+export EDITOR=codesource /Users/toast/.git-completion.bash
