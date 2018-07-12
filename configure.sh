@@ -37,8 +37,8 @@ echo ''
 echo "Now installing oh-my-zsh plugins..."
 echo ''
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.dotfiles/zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.dotfiles/zsh/zsh-syntax-highlighting
 
 # powerlevel9k install
 echo ''
